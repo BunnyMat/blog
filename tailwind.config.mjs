@@ -2,6 +2,7 @@ import prose from "@tailwindcss/typography";
 import forms from "@tailwindcss/forms";
 import plugin from "tailwindcss/plugin";
 import colors from "tailwindcss/colors";
+import defaultTheme from "tailwindcss/defaultTheme";
 import { ACCENT_COLOR, BASE_COLOR, MANUAL_DARK_MODE } from "./src/config.ts";
 
 /** @type {import('tailwindcss').Config} */
@@ -9,6 +10,9 @@ export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Peyda", ...defaultTheme.fontFamily.sans],
+      },
       colors: {
         accent: colors[ACCENT_COLOR.toLowerCase()],
         base: colors[BASE_COLOR.toLowerCase()],
