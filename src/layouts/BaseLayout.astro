@@ -67,6 +67,26 @@ const { title, description, image } = Astro.props;
       .MathJax svg {
         display: inline !important;
       }
+
+      .prose p,
+      .prose h1,
+      .prose h2,
+      .prose h3,
+      .prose h4,
+      .prose h5,
+      .prose h6,
+      .prose blockquote,
+      .prose li,
+      .prose td,
+      .prose th,
+      .prose figcaption,
+      .prose dt,
+      .prose dd,
+      .prose summary,
+      article .mt-3,
+      article p {
+        unicode-bidi: plaintext;
+      }
     </style>
   </head>
 
