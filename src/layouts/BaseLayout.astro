@@ -5,7 +5,7 @@ const { title, description, image } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" class="h-full antialiased">
+<html lang="fa" dir="rtl" class="h-full antialiased">
   <head>
     <BaseHead title={title} description={description} image={image} />
 
@@ -66,6 +66,14 @@ const { title, description, image } = Astro.props;
       }
       .MathJax svg {
         display: inline !important;
+      }
+
+      pre,
+      code,
+      kbd,
+      samp {
+        direction: ltr;
+        text-align: left;
       }
 
       .prose p,
