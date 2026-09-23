@@ -19,7 +19,7 @@ export const SITE_TITLE = "Matin's blog";
 export const SITE_DESCRIPTION = "Welcome to my blog website! I'll be writing some stuff here.";
 
 // will be used as the icon in the header and the favicon
-export const SITE_FAVICON = "🙃";
+export const SITE_FAVICON = "🤹🏻‍♂️";
 
 // will be used in the footer as the name of the author (c) <YEAR> <NAME> - LICENSE
 export const NAME = "Matin";
